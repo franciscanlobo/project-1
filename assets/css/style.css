@@ -1,0 +1,128 @@
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-nav {
+  background-color: #ececec;
+}
+
+.product-nav .nav-link {
+  color: #000;
+  font-weight: 700;
+  font-size: small;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.product-nav .nav-link:hover {
+  color: #007bff;
+}
+
+body,
+header,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: brightness(0.9);
+}
+
+header img:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #303033;
+  margin: 0 auto 1rem auto;
+  max-width: 900px;
+}
+
+#product-carousel .carousel {
+  position: relative;
+}
+
+.carousel-label h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 60%;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+.carousel-fade .carousel-item {
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: none;
+}
+
+.carousel-item video,
+.carousel-item img {
+  transition: transform 1.5s ease;
+}
+
+.carousel-item.active video,
+.carousel-item.active img {
+  transform: scale(1.01);
+  transition: transform 3s ease;
+  will-change: transform;
+}
