@@ -1,8 +1,11 @@
+/* ----------------------------------------------------
+   Global Styles
+---------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 * {
   transition: all 0.3s ease-in-out;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
@@ -11,6 +14,16 @@ body {
   background-color: #f4f4f4;
 }
 
+body,
+header,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* ----------------------------------------------------
+   Header
+---------------------------------------------------- */
 header {
   text-align: center;
   background-color: #fff;
@@ -18,6 +31,61 @@ header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+header img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+header img:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+/* ----------------------------------------------------
+   Typography
+---------------------------------------------------- */
+h2,
+h3 {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin: 0 auto 1rem;
+  max-width: 600px;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #303033;
+  margin: 0 auto 1rem;
+  max-width: 900px;
+}
+
+p.acsi {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #303033;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* ----------------------------------------------------
+   Navigation
+---------------------------------------------------- */
 .product-nav {
   background-color: #ececec;
 }
@@ -34,55 +102,9 @@ header {
   color: #007bff;
 }
 
-body,
-header,
-section {
-  margin: 0;
-  padding: 0;
-}
-
-header img {
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 1rem;
-  filter: brightness(0.9);
-}
-
-header img:hover {
-  filter: brightness(1);
-  transform: scale(1.05);
-}
-
-header h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #000;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.25rem;
-}
-
-h2 {
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 0.5rem;
-  margin: 0 auto 1rem auto;
-  max-width: 600px;
-}
-
-p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #303033;
-  margin: 0 auto 1rem auto;
-  max-width: 900px;
-}
-
+/* ----------------------------------------------------
+   Buttons
+---------------------------------------------------- */
 .btn-dark {
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -93,14 +115,9 @@ p {
   transform: translateY(-2px);
 }
 
-p.acsi {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #303033;
-  margin: 0 auto 0 auto;
-  max-width: 500px;
-}
-
+/* ----------------------------------------------------
+   Carousel
+---------------------------------------------------- */
 #product-carousel .carousel {
   position: relative;
 }
@@ -117,6 +134,7 @@ p.acsi {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .carousel-control-prev-icon:hover,
@@ -130,9 +148,7 @@ p.acsi {
 }
 
 .carousel-fade .carousel-item {
-  transition-property: opacity, transform;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .carousel-fade .active.carousel-item-start,
@@ -152,15 +168,17 @@ p.acsi {
   will-change: transform;
 }
 
-/* --- Design Cards --- */
+/* ----------------------------------------------------
+   Design Cards
+---------------------------------------------------- */
 .design-card {
   background-color: #f4f4f4;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .design-card:hover {
@@ -179,15 +197,24 @@ p.acsi {
   max-width: 380px;
 }
 
-/* --- Flip7 Color Picker Section --- */
+/* ----------------------------------------------------
+   Flip 7 Color Picker
+---------------------------------------------------- */
 #flip7-colors .phone-display img {
   transition: opacity 0.4s ease;
 }
 
-/* Base button styling (removed duplicate .color-btn rules) */
+#flip7-colors .color-options {
+  background-color: #cacaca;
+  padding: 12px 12px;
+  border-radius: 50px;
+  max-width: 280px;
+}
+
+/* Color Buttons */
 #flip7-colors .color-btn {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 2px solid #ddd;
   border-radius: 50%;
   cursor: pointer;
@@ -195,7 +222,6 @@ p.acsi {
     box-shadow 0.25s ease;
 }
 
-/* Hover and active effects */
 #flip7-colors .color-btn:hover {
   transform: scale(1.1);
   border-color: #000;
@@ -207,7 +233,7 @@ p.acsi {
   transform: scale(1.15);
 }
 
-/* Color label styling */
+/* Color Label */
 #color-name {
   font-size: 1.2rem;
   color: #111;
@@ -216,7 +242,7 @@ p.acsi {
   margin-bottom: 1rem;
 }
 
-/* Buy Now button */
+/* Buy Button */
 #flip7-colors .buy-btn {
   background-color: #fff;
   border: 2px solid #000;
@@ -234,6 +260,9 @@ p.acsi {
   transform: scale(1.05);
 }
 
+/* ----------------------------------------------------
+   Performance Section
+---------------------------------------------------- */
 #performance .col-md-3 .p-4 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -243,8 +272,11 @@ p.acsi {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
+/* ----------------------------------------------------
+   Privacy Section
+---------------------------------------------------- */
 #privacy-section .card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
