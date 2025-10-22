@@ -20,32 +20,34 @@
       class="text-center py-3 bg-white shadow-sm sticky-top"
       style="z-index: 1030"
     >
-      <img
-        src="assets/images/samsung-logo.png"
-        alt="Samsung Logo"
-        style="width: 150px"
-      />
+      <a href="#home">
+        <img
+          src="assets/images/samsung-logo.png"
+          alt="Samsung Logo"
+          style="width: 150px"
+        />
+      </a>
     </header>
 
     <nav class="product-nav sticky-top" style="top: 70px; z-index: 1020">
       <ul class="nav justify-content-center py-2">
         <li class="nav-item">
-          <a class="nav-link" href="#design">Design</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#camera">Camera</a>
+          <a class="nav-link" href="#design">Design</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#performance">Performance</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#ai">AI Features</a>
         </li>
       </ul>
     </nav>
 
     <!-- Main Content -->
-    <main class="container-fluid py-5">
+    <main class="container-fluid py-5" id="home">
       <div class="row align-items-center g-5">
         <div class="col-lg-8 col-md-12">
           <img
@@ -148,8 +150,8 @@
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
               ></button>
             </div>
 
@@ -256,6 +258,439 @@
             </button>
           </div>
         </div>
+
+        <div class="acsi text-center">
+          <img
+            src="assets/images/acsi.jpg"
+            alt="ACSI Badge"
+            class="d-block mx-auto mt-5"
+            style="width: 50px"
+          />
+          <h3 class="fw-bold display-6 text-center">
+            Samsung products are rated #1 in Design
+          </h3>
+          <p class="acsi text-center">
+            Experience the fun and pocketability of Galaxy Z Flip7 and see why
+            Samsung is rated #1 in Design by the American Customer Satisfaction
+            Index (ACSI®).
+          </p>
+          <div class="text-center my-4">
+            <a
+              href="https://news.samsung.com/us/stretch-your-tech-samsung-care-helps-you-make-every-dollar-count/"
+              target="_blank"
+              class="btn btn-dark btn-lg rounded-5 px-4 py-2"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="design" class="design py-5">
+        <div class="container">
+          <!-- Intro Row -->
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+              <h2 class="display-4 fw-bold">
+                Ultra sleek. <br />Ultra pocketable.
+              </h2>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <p>
+                The <b>redesigned Cover Screen</b> on Galaxy Z Flip7 features
+                our <b>slimmest bezel yet</b>, enabling you to do more from
+                FlexWindow than ever before. The stunning Main Screen now
+                features an undisrupted viewing <b>experience</b> that's a sight
+                to behold.
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Image -->
+          <div class="text-center my-5">
+            <img
+              src="assets/images/design-1.png"
+              alt="Galaxy Z Flip 7 Form Factor"
+              class="img-fluid rounded-4 shadow-sm"
+              style="max-height: 100vh; object-fit: cover"
+            />
+          </div>
+
+          <!-- Design Features -->
+          <section class="py-5 bg-light rounded-4">
+            <div class="container">
+              <h3 class="fw-semibold text-center mb-5">
+                Upgraded to Flip Without Fear
+              </h3>
+
+              <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                  <div class="design-card p-4 text-center flex-fill">
+                    <h5 class="fw-semibold mb-3">Armored in Aluminum</h5>
+                    <p class="card-text mb-4">
+                      Strong but lightweight, the frame made of Armor Aluminum
+                      protects your Galaxy Z Flip7 and is IP48-rated for water
+                      and dust resistance.
+                    </p>
+                    <img
+                      src="assets/images/design-carousel-1.jpg"
+                      alt="Phone with aluminum body"
+                      class="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                  <div class="design-card p-4 text-center flex-fill">
+                    <h5 class="fw-semibold mb-3">Enhanced Armor FlexHinge</h5>
+                    <p class="card-text mb-4">
+                      Meet our innovative Armor FlexHinge that now closes
+                      thinner and is more durable than ever.
+                    </p>
+                    <img
+                      src="assets/images/design-carousel-2.jpg"
+                      alt="Enhanced Armor FlexHinge"
+                      class="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                  <div class="design-card p-4 text-center flex-fill">
+                    <h5 class="fw-semibold mb-3">A Show of Strength</h5>
+                    <p class="card-text mb-4">
+                      A durable display that goes the distance with Corning®
+                      Gorilla® Glass Victus® 2.
+                    </p>
+                    <img
+                      src="assets/images/design-carousel-3.jpg"
+                      alt="Phone showing Gorilla Glass durability"
+                      class="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Color Picker Section -->
+          <section id="flip7-colors" class="py-5 text-center">
+            <div class="container">
+              <h3 class="fw-semibold mb-4">
+                Choose Your Galaxy Z Flip 7 Color
+              </h3>
+
+              <!-- Phone Display -->
+              <div class="phone-display mb-4">
+                <img
+                  id="flip7-image"
+                  src="assets/images/flip7-mint.png"
+                  alt="Galaxy Z Flip 7 Mint"
+                  class="img-fluid rounded-4 shadow-sm"
+                  style="max-width: 400px"
+                />
+              </div>
+
+              <!-- Color Name -->
+              <h5 id="color-name" class="fw-semibold text-dark mb-3">Mint</h5>
+
+              <!-- Color Options -->
+              <div
+                class="color-options d-flex justify-content-center gap-3 flex-wrap mb-4"
+              >
+                <button
+                  class="color-btn active"
+                  data-color="mint"
+                  data-name="Mint"
+                  style="background-color: #b8f1e3"
+                ></button>
+
+                <button
+                  class="color-btn"
+                  data-color="blue-shadow"
+                  data-name="Blue Shadow"
+                  style="background-color: #708bbf"
+                ></button>
+
+                <button
+                  class="color-btn"
+                  data-color="jetblack"
+                  data-name="Jet Black"
+                  style="background-color: #1b1b1b"
+                ></button>
+
+                <button
+                  class="color-btn"
+                  data-color="coralred"
+                  data-name="Coral Red"
+                  style="background-color: #e65454"
+                ></button>
+              </div>
+
+              <!-- Buy Now Button -->
+              <a
+                href="https://www.samsung.com/"
+                target="_blank"
+                class="btn btn-outline-dark px-4 py-2 rounded-pill fw-semibold"
+              >
+                Buy Now
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Performance Section -->
+      <section id="performance" class="bg-light">
+        <div class="container text-center">
+          <h2 class="fw-bold display-5 mb-4">
+            Stylish Phone, Serious Performance
+          </h2>
+
+          <img
+            src="assets/images/flip7-performance.jpg"
+            alt="Galaxy Z Flip7 Performance"
+            class="img-fluid rounded-4 shadow-sm mb-4"
+            style="max-width: 800px"
+          />
+
+          <p class="mx-auto mb-5" style="max-width: 700px">
+            The <b>advanced processor</b> on Galaxy Z Flip7 powers everything
+            from the battery to the displays, ensuring that it works at the
+            speed you need it to, whether you're streaming, gaming, or editing
+            your latest video.
+          </p>
+
+          <div class="row justify-content-center text-center g-4 mb-5">
+            <div class="col-md-3 col-sm-6">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="fw-bold mb-2">CPU</h5>
+                <h2 class="fw-bold text-primary mb-1">9%</h2>
+                <p class="text-secondary mb-0">faster processing</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="fw-bold mb-2">GPU</h5>
+                <h2 class="fw-bold text-primary mb-1">23%</h2>
+                <p class="text-secondary mb-0">smoother graphics</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="fw-bold mb-2">NPU</h5>
+                <h2 class="fw-bold text-primary mb-1">22%</h2>
+                <p class="text-secondary mb-0">quicker AI</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-start mx-auto" style="max-width: 800px">
+            <h3 class="fw-bold text-center mt-5 mb-2">
+              The Largest Battery on Galaxy Z Flip
+            </h3>
+            <p>
+              A <b>4300mAh battery</b> and <b>mDNIe technology</b> have been
+              optimized so this Flip is ready for
+              <b>hours of uninterrupted entertainment</b>.<sup>1,2,3,4</sup>
+            </p>
+
+            <h3 class="fw-bold text-center mt-4 mb-2">
+              Seamless Views, Inside and Out
+            </h3>
+            <p>
+              Discover our <b>smoothest viewing experience on FlexWindow</b>.
+              With up to 120 Hz refresh rates and a peak brightness of 2600
+              nits, scrolling is easy on your eyes even outdoors. Plus, our
+              improvedb <b>Vision Booster enhances the color and contrast</b> so
+              you can see every detail clearly.<sup>1,22</sup>
+            </p>
+
+            <h3 class="fw-bold text-center mt-4 mb-2">
+              Storage for Everything You Need
+            </h3>
+            <p>
+              Keep all your treasured moments on hand with 12GB of memory and a
+              choice of <b>two storage options</b>. Choose up to
+              <b>256GB of storag</b>e if you like to take photos and stream
+              videos. Or, go even bigger with up to <b>512GB of storage</b> if
+              you're an avid gamer or download larger apps, to avoid running out
+              of storage space.<sup>23</sup>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Feature Section -->
+      <section id="ai" class="py-5 bg-light">
+        <div class="container text-center">
+          <!-- Header -->
+          <h2 class="fw-bold display-5 mb-4">Galaxy AI in Your Pocket</h2>
+
+          <!-- Now Brief -->
+          <p class="text-uppercase text-muted small fw-semibold mb-1">
+            Now Brief
+          </p>
+          <h4 class="fw-semibold mb-4">
+            Stay Ahead of Your Day with Now Brief
+          </h4>
+
+          <!-- Video -->
+          <video
+            class="w-100 rounded-4 shadow-sm mb-4"
+            autoplay
+            loop
+            muted
+            playsinline
+            style="max-height: 90vh; object-fit: cover"
+          >
+            <source src="assets/videos/flip7-ai.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Paragraph -->
+          <p class="mx-auto mb-5" style="max-width: 700px">
+            Receive a personalized summary of your day from Now Brief right from
+            the cover screen. Tailored insights, such as the latest weather and
+            Energy Score, are all available at just a glance.
+          </p>
+
+          <!-- Now Bar Section -->
+          <div class="text-start mx-auto mb-5" style="max-width: 800px">
+            <h4 class="fw-semibold mt-4 mb-2">Now Bar</h4>
+            <p>
+              Lock into the now. Now Bar, available right from the Cover Screen,
+              gives you direct access to music that's playing, live
+              notifications and more.<sup>25</sup>
+            </p>
+
+            <h5 class="fw-semibold mt-4 mb-2">How to Use Now Bar</h5>
+            <p>
+              Access and manage live notifications, timers, voice recordings,
+              and more — all from your Cover Screen. Stay on track with your
+              day, control music, or check your Energy Score in real time.
+              Features may vary by country or device model.
+            </p>
+
+            <ul class="small text-secondary">
+              <li>Track workouts easily with Samsung Health</li>
+              <li>Set and manage timers directly on your lock screen</li>
+              <li>Record voice memos without unlocking your device</li>
+              <li>Stay connected to live notifications, apps, and widgets</li>
+            </ul>
+          </div>
+
+          <!-- Gemini Live Section -->
+          <div class="text-start mx-auto mb-5" style="max-width: 800px">
+            <h4 class="fw-semibold mt-5 mb-2">Gemini Live</h4>
+            <p>
+              Speak freely and naturally with Gemini Live to get information in
+              real time. Ask Gemini what symbols mean, get clothing care
+              instructions, or details about a restaurant nearby — all through
+              your camera.<sup>26</sup>
+            </p>
+
+            <h5 class="fw-semibold mt-4 mb-2">
+              How to Use Gemini Live with Camera
+            </h5>
+            <p>
+              Long-press the side button to bring up Gemini, then switch to
+              FlexMode and tap the Video Streaming icon to share your camera.
+              Gemini will analyze what you see and respond instantly with
+              helpful insights, suggestions, or advice — completely hands-free.
+            </p>
+
+            <p class="small text-secondary">
+              *FlexMode supported at angles between 75° and 115°. Internet and
+              Google Account required. Service availability may vary by region
+              or device.
+            </p>
+          </div>
+
+          <!-- Google AI Pro Offer -->
+          <div
+            class="p-4 bg-white rounded-4 shadow-sm mx-auto mb-5"
+            style="max-width: 750px"
+          >
+            <h4 class="fw-semibold mb-2">Get 6 Months of Google AI Pro</h4>
+            <p class="mb-0">
+              Enjoy a 6-month trial with access to powerful Gemini features like
+              video generation powered by Veo3, plus 2 TB of secure cloud
+              storage — on us.<sup>27</sup>
+            </p>
+          </div>
+
+          <!-- Privacy Section -->
+          <section id="privacy-section" class="py-5 m-0 bg-light">
+            <div class="container">
+              <h2 class="fw-bold display-6 text-center mb-5">
+                Your Privacy, Secured for the Era of AI
+              </h2>
+
+              <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card-body p-4">
+                      <h5 class="fw-semibold mb-2">On-device Protection</h5>
+                      <p class="card-text">
+                        Our Personal Data Engine gathers and processes your data
+                        safely. It’s encrypted and stored in Knox Vault, making
+                        it harder for anyone else to access.<sup>28</sup>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card-body p-4">
+                      <h5 class="fw-semibold mb-2">Tailored Controls</h5>
+                      <p class="card-text">
+                        You decide where your AI data gets processed — either
+                        securely on-device or in the cloud.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                  <div class="card h-100 shadow-sm border-0 rounded-4">
+                    <div class="card-body p-4">
+                      <h5 class="fw-semibold mb-2">Connected Security</h5>
+                      <p class="card-text">
+                        Knox Matrix Trust Chain technology secures your entire
+                        Galaxy ecosystem so you can monitor other devices
+                        directly from your phone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="mt-5">
+            <video
+              class="w-100 d-block"
+              autoplay
+              loop
+              muted
+              playsinline
+              style="height: 100vh; object-fit: cover"
+            >
+              <source src="assets/videos/end-banner.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -263,6 +698,35 @@
     <footer class="text-center py-4 bg-dark text-white mt-5">
       <small>© 2025 Samsung Electronics. All Rights Reserved.</small>
     </footer>
+
+    <script>
+      const colorButtons = document.querySelectorAll(".color-btn");
+      const flipImage = document.getElementById("flip7-image");
+      const colorName = document.getElementById("color-name");
+
+      const colorImages = {
+        mint: "assets/images/flip7-mint.png",
+        "blue-shadow": "assets/images/flip7-blueshadow.png",
+        jetblack: "assets/images/flip7-jetblack.png",
+        coralred: "assets/images/flip7-coralred.png",
+      };
+
+      colorButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          colorButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          colorName.textContent = btn.dataset.name;
+
+          flipImage.style.opacity = 0;
+          setTimeout(() => {
+            flipImage.src = colorImages[btn.dataset.color];
+            flipImage.alt = `Galaxy Z Flip 7 ${btn.dataset.name}`;
+            flipImage.style.opacity = 1;
+          }, 300);
+        });
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
